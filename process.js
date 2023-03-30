@@ -1,5 +1,25 @@
+export function container(id){
+    return document.getElementById(id);
+}
+
+export function onClick(id,actionfunctionname){
+    document.getElementById(id).onclick = actionfunctionname;
+}
+
+export function textFocus(id){
+    document.getElementById(id).focus();
+}
+
+export function textBlur(id){
+    document.getElementById(id).blur();
+}
+
 export function getValue(id){
     return document.getElementById(id).value;
+}
+
+export function setValue(id,valuecontent){
+    return document.getElementById(id).value=valuecontent;
 }
 
 export function setInner(id,content){
